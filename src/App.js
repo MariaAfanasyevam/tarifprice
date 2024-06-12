@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Tarif from './component/Tarif';
+import data from './data/tarif.json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      {data.map((i) => (
+        <Tarif
+          key={i.id}
+          name={i.name}
+          price={i.price}
+          speed={i.speed}
+          color={i.color}
+          isSelected={i.isSelected}
+        />
+      ))}
+    </React.Fragment>
   );
 }
 

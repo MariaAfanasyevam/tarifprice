@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+p{
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+  background: #1db3dd;
+}
+
+article {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+  display: flex;
+  flex-direction: row;
+}
+.pricename
+{
+  text-align: center;
+  color: rgb(200, 50, 50);
+  line-height: 50px;
+  margin: 0;
+  background: #f8fcfc;
+}
+.text 
+{
+  text-align: center;
+  color: rgb(6, 6, 6);
+  line-height: 50px;
+  margin: 0;
+  font-size: 20px;
+  background: #f8fcfc;
+}
+.text2 
+{
+  text-align: center;
+  color: rgb(6, 6, 6);
+  line-height: 30px;
+  margin: 0;
+  background: #a0abab;
+}
+.regular
+{
+background-color: red;
+width: 400px;
+height: 230px;
+}

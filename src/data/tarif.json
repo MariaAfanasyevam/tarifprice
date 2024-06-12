@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Unlimited",
+        "speed": "10",
+        "price": "300",
+        "color": "blue",
+        "isSelected": "false"
+    },
+    {
+        "name": "Unlimited450",
+        "speed": "50",
+        "price": "450",
+        "color": "green",
+        "isSelected": "false"
+    },
+    {
+        "name": "Unlimited550",
+        "speed": "100",
+        "price": "550",
+        "color": "red",
+        "isSelected": "true"
+    }
+    ,
+    {
+        "name": "Unlimited1000",
+        "speed": "200",
+        "price": "1000",
+        "color": "black",
+        "isSelected": "false"
+    }
+  ]
