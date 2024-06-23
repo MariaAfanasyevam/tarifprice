@@ -60,14 +60,7 @@ article {
   display: flex;
   flex-direction: row;
 }
-.pricename
-{
-  text-align: center;
-  color: rgb(200, 50, 50);
-  line-height: 50px;
-  margin: 0;
-  background: #f8fcfc;
-}
+
 .text 
 {
   text-align: center;

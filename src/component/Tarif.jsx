@@ -1,26 +1,41 @@
+ import React, {useState} from "react";
+ import "./tarif.css"
 
-function Tarif(props) {
-     let className;
-         if (props.isSelected=='true')
-         {
-                className = 'regular'
-            }
-    
-            return (
-     <div>
-           <section >
-            <article className={className}>
-              <div>
-                <h4 class='pricename'>{props.name}</h4>
-                <p>руб <span style = {{ fontSize: '30px', justifyContent: 'center', alignItems: 'center'}}>{props.price}</span> мес</p>
-                <div class="text">до {props.speed} Мбит/сек</div>
-                <div class='text2'>Объем включенного трафика не ограничен</div>
-             </div>
-            </article>
-            </section>
+export const  Tarif = ({tarif}) => {
+  const {name , price, speed, color} = tarif;
+  const [isSelected, setIsSelected] = useState (false);
+  const [value, setValue] = useState (name);
+   
+  function getValue (event) {
+    const newValue = event.target.value;
+    setValue(newValue);
+  }
+
+
+  return (
+  
+  <section>
+<article>
+    {
+    isSelected ? (
+      <div className = {`selected ${color}`} onClick= {() => setIsSelected(false)}>
+    <div className = 'name'>{name}</div>
+    <div className='price'>{price}</div>
+    <div className="text"> до {speed} Мбит/сек </div>
+    <div className='text2'> Объем включенного трафика не ограничен </div>
       </div>
-       
+     
+    ) : (
+    <div className={`tarif ${color}`} onClick={() => setIsSelected(true)}>
+    <div className = 'name'>{name}</div>
+    <div className='price'>{price}</div>
+    <div className="text"> до {speed} Мбит/сек </div>
+    <div className='text2'> Объем включенного трафика не ограничен </div>
+        </div>
+    )}
 
-    );
+</article>
+    </section>
+ 
+      );
 }
-export default Tarif;

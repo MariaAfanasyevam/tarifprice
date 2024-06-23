@@ -1,0 +1,73 @@
+.tarif
+{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.selected
+{
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    text-align: center;
+}
+.green .price {
+ background-color: rgb(127, 241, 127);
+ padding: 30px;
+}
+
+.green .name {
+background-color: green;
+padding: 10px;
+}
+
+.pink .price {
+    background-color: rgb(241, 187, 196);
+    padding: 30px;
+}
+.pink .name {
+    background-color: pink;
+    padding: 30px;
+}
+
+.red .price {
+    background-color: rgb(232, 95, 95);
+    padding: 30px;
+}
+.red .name {
+    background-color: red;
+    padding: 30px;
+}
+.blue .price {
+    background-color: rgb(120, 120, 240);
+    padding: 30px;
+}
+.blue .name {
+    background-color: blue;
+    padding: 30px;
+}
+
+.price
+{
+  text-align: center;
+  color: rgb(53, 39, 39);
+
+  margin: 0;
+  background: #f8fcfc;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  article {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+    display: flex;
+    flex-direction: row;
+  }
